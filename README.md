@@ -53,7 +53,5 @@ Frontend: http://localhost:5173
 3. Kullanım istatistiklerinizi görüntüleyin
 4. Tasarruf önerilerini inceleyin
 
-## 📄 Lisans
-
 MIT
 
