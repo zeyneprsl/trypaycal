@@ -53,13 +53,6 @@ Frontend: http://localhost:5173
 3. Kullanım istatistiklerinizi görüntüleyin
 4. Tasarruf önerilerini inceleyin
 
-## 💎 Premium Özellikler
-
-- Sınırsız abonelik takibi
-- Otomatik fiyat artışı bildirimleri
-- Gelişmiş analitik raporlar
-- Fintech entegrasyonları
-
 ## 📄 Lisans
 
 MIT
