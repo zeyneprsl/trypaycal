@@ -4,13 +4,11 @@
   "description": "Digital Subscription Tracker - Track your Netflix, Spotify, ChatGPT and more",
   "main": "server/index.js",
   "scripts": {
-    "setup": "node setup.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server/index.js",
     "client": "cd client && npm run dev",
     "build": "cd client && npm run build",
-    "start": "node server/index.js",
-    "postinstall": "node setup.js"
+    "start": "node server/index.js"
   },
   "keywords": [
     "subscription",

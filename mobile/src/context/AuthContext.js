@@ -2,10 +2,14 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 
+import { Platform } from 'react-native';
+
 const AuthContext = createContext();
 
-// Backend API URL'ini buradan değiştir (bilgisayarının IP adresi)
-const API_URL = 'http://192.168.1.11:5000/api';
+// Backend API URL - Web için localhost, Mobil için yerel ağ IP'si
+const API_URL = Platform.OS === 'web' 
+  ? 'http://localhost:5000/api' 
+  : 'http://192.168.1.11:5000/api'; // Kendi yerel IP adresinle güncellemen gerekebilir
 
 export const useAuth = () => {
   const context = useContext(AuthContext);

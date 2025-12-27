@@ -1,4 +1,4 @@
-# 📦 SubTracker - Dijital Abonelik Takipçisi
+# 📦 Paycal - Dijital Abonelik Takipçisi
 
 Netflix, Spotify, ChatGPT ve daha fazlası için akıllı abonelik yönetimi.
 
@@ -10,48 +10,51 @@ Netflix, Spotify, ChatGPT ve daha fazlası için akıllı abonelik yönetimi.
 - ⚠️ Fiyat artışı uyarıları
 - 📈 "Kullanmıyorsun" analizi
 - 🎯 Premium özellikler
+- 🤝 Arkadaşlık sistemi ve Keşfet paneli
 
 ## 🛠️ Teknolojiler
 
 ### Backend
 - Node.js + Express
-- SQLite veritabanı
+- PostgreSQL (Supabase)
 - JWT Authentication
 - Node-cron (otomatik kontroller)
 
 ### Frontend
-- React + Vite
-- Tailwind CSS
-- React Router DOM
-- Lucide Icons
+- React Native (Expo)
+- React Native Web support
+- Expo Linear Gradient
 
 ## 📦 Kurulum
 
 1. Bağımlılıkları yükleyin:
 ```bash
 npm install
-cd client && npm install
+cd mobile && npm install
 ```
 
-2. Environment değişkenlerini ayarlayın:
+2. Environment değişkenlerini ayarlayın (.env dosyası ana dizinde olmalı):
 ```bash
-cp .env.example .env
+DATABASE_URL=senin_supabase_url
+JWT_SECRET=senin_gizli_anahtarin
 ```
 
 3. Uygulamayı başlatın:
+
+**Backend:**
 ```bash
-npm run dev
+npm run server
 ```
 
-Backend: http://localhost:5000
-Frontend: http://localhost:5173
+**Frontend (Web):**
+```bash
+cd mobile && npx expo start --web
+```
 
-## 📱 Kullanım
+**Frontend (Mobile):**
+```bash
+cd mobile && npx expo start
+```
 
-1. Hesap oluşturun veya giriş yapın
-2. Aboneliklerinizi ekleyin
-3. Kullanım istatistiklerinizi görüntüleyin
-4. Tasarruf önerilerini inceleyin
-
+## 📄 Lisans
 MIT
-
