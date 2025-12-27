@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Paycal",
+    "slug": "paycal",
+    "scheme": "paycal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#1e1b4b"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.subtracker.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.subtracker.app",
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan",
+      "navigationBar": {
+        "visible": true,
+        "barStyle": "dark-content",
+        "backgroundColor": "#1e1b4b"
+      }
+    },
+    "extra": {
+      "apiUrl": "http://192.168.1.11:5000"
+    }
+  }
+}
+
